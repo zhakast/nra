@@ -207,8 +207,15 @@ body{
 .cell.a{ grid-column:1; grid-row:1; }
 .cell.b{ grid-column:2; grid-row:1; }
 .cell.c{ grid-column:1 / span 2; grid-row:2; } /* center big */
-.cell.d{ grid-column:1; grid-row:3; }
-.cell.e{ grid-column:2; grid-row:3; }
+.cell.d{ 
+  grid-column:1; 
+  grid-row:3; 
+  transform: translateY(-35px) rotate(var(--rot));}
+.cell.e{ 
+  grid-column:2; 
+  grid-row:3; 
+  transform: translateY(-35px) rotate(var(--rot));
+}
 
 /* ✅ НОВОЕ: подтянули ряды ближе друг к другу (и применится и сверху и снизу) */
 .cell.a, .cell.b { --y: -10px; }  /* верхние 2 чуть выше */
